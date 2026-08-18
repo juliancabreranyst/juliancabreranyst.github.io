@@ -12,8 +12,8 @@ taxonomies:
 
 menu:
     main:
-        - name: Books
-          url: books/
+        - name: Home
+          url: /
           weight: 5 
         #- name: Papers
           #url: papers/
@@ -55,7 +55,7 @@ params:
     profileMode:
           enabled: true
           title: Julián Cabrera-Nyst
-          subtitle: "I am a PhD student at the University of Granada, Spain. My research focuses on interacting particle systems. I am specially interested in the heterogeneous regime in which not all the particles have the same identities, which enriches the modelling perspective as many real world system do have this feauture. I am interested in the mathematical description of these models as the number of particles goes to infinity (mean field limit)."
+          subtitle: "I am a third-year PhD student in Mathematics at the [University of Granada](https://www.ugr.es), and I'll soon be visiting the [Laboratoire Jacques-Louis Lions](https://www.ljll.fr)."
           imageUrl: "profile-webpage.jpeg"
           imageWidth: 200
           imageHeight: 200
@@ -64,10 +64,10 @@ params:
               url: research/
             - name: CV
               url: cv/
-            - name: Books
-              url: books/
-            - name: Papers
-              url: papers/
+            #- name: Books
+              #url: books/
+            #- name: Papers
+              #url: papers/
             #- name: Tags
               #url: tags/
             #- name: Archive
@@ -109,7 +109,7 @@ params:
     label:
       text: "Julián Cabrera-Nyst"
       icon: favicon.ico
-      iconHeight: 20
+      iconHeight: 15
 
 markup:
     goldmark:

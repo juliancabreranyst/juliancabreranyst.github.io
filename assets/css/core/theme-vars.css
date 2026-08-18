@@ -7,14 +7,14 @@
     --footer-height: 70px;
     --radius: 8px;
     --theme: rgba(20, 116, 52, 0.24);
-    --entry: rgba(18, 135, 123, 0.666);
+    --entry: rgba(71, 80, 79, 0.666);
     --primary: rgb(2, 2, 2);  /*color del texto de la página principal*/
-    --secondary: rgb(158, 145, 145);  /*color del texto de la parte de abajo*/
-    --tertiary: rgba(27, 131, 152, 0.357);
+    --secondary: rgb(0, 0, 0);  /*color del texto de la parte de abajo*/
+    --tertiary: rgba(117, 158, 188, 0.479); /* Color de los botones */
     --gray: rgb(165, 165, 165);
     --content: rgb(30, 30, 30);
     --code-block-bg: rgb(28, 29, 33);
-    --code-bg: rgb(26, 91, 137);    /*color de fondo*/
+    --code-bg: rgb(117, 158, 188);    /*color de fondo*/
     --border: rgb(20, 9, 9);
     --darkcolor: #0d1a38;
     --lightcolor: #282a2e4e;
