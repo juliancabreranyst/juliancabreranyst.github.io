@@ -2,13 +2,17 @@ body, h1, h2, h3, h4, h5, h6, .profile_inner h1 {
     font-family: "Latin Modern Roman", "Computer Modern Serif", "CMU Serif", "Computer Modern", serif !important;
 }
 
-body {
-    background-image: url('/background.jpeg') !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
-}
+/*body {*/
+    /*background-image: url('/background.jpeg') !important;*/
+    /*background-size: cover !important;*/
+    /*background-position: center !important;*/
+    /*background-attachment: fixed !important;*/
+/*}*/
 
-.profile_inner img {
-    border-radius: 70 !important;
+/*.profile_inner img {*/
+    /*border-radius: 70 !important;*/
+/*}*/
+
+.post-meta {
+    display: none !important;
 }

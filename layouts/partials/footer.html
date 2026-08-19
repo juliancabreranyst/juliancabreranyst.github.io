@@ -139,3 +139,87 @@
     });
 </script>
 {{- end }}
+
+<!-- ========================================== -->
+<!-- CUSTOM OVERLAY ANIMATION                   -->
+<!-- ========================================== -->
+<style>
+    #bg-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999; /* Forces the network ON TOP of all website colors */
+        pointer-events: none; /* Allows your mouse to click through the canvas */
+    }
+</style>
+
+<canvas id="bg-canvas"></canvas>
+
+<script>
+    const canvas = document.getElementById('bg-canvas');
+    const ctx = canvas.getContext('2d');
+    let width, height, particles;
+
+    function init() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+        particles = [];
+        
+        let num = Math.floor((width * height) / 6000);
+        for(let i = 0; i < num; i++) {
+            particles.push({
+                x: Math.random() * width,
+                y: Math.random() * height,
+                vx: (Math.random() - 0.5) * 0.15, 
+                vy: (Math.random() - 0.5) * 0.15,
+                offset: Math.random() * 100 
+            });
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, width, height);
+        
+        for(let i = 0; i < particles.length; i++) {
+            let p = particles[i];
+            p.x += p.vx; 
+            p.y += p.vy;
+            
+            if(p.x < 0 || p.x > width) p.vx *= -1;
+            if(p.y < 0 || p.y > height) p.vy *= -1;
+            
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 1.2, 0, Math.PI * 2);
+            ctx.fillStyle = 'rgba(130, 130, 130, 0.5)';
+            ctx.fill();
+            
+            for(let j = i + 1; j < particles.length; j++) {
+                let p2 = particles[j];
+                let dist = Math.hypot(p.x - p2.x, p.y - p2.y);
+                
+                if(dist < 150) {
+                    let time = Date.now() * 0.0015; 
+                    let pulse = (Math.sin(time + p.offset) + 1) / 2;
+                    
+                    let baseOpacity = 1 - (dist / 150);
+                    let finalOpacity = baseOpacity * (0.05 + 0.4 * pulse); 
+                    
+                    ctx.beginPath();
+                    ctx.strokeStyle = `rgba(130, 130, 130, ${finalOpacity})`;
+                    ctx.lineWidth = 0.5 + (pulse * 0.6);
+                    ctx.moveTo(p.x, p.y);
+                    ctx.lineTo(p2.x, p2.y);
+                    ctx.stroke();
+                }
+            }
+        }
+        requestAnimationFrame(animate);
+    }
+    
+    window.addEventListener('resize', init);
+    init();
+    animate();
+</script>
+<!-- ========================================== -->

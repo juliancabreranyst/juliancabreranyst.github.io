@@ -77,7 +77,7 @@ params:
 
     socialIcons:
         - name: CV
-          url: cv.pdf
+          url: CV-Cabrera-Nyst_Linares_Julian.pdf
         - name: Email
           url: mailto:jcabreranyst@ugr.es
         #- name: Zoom

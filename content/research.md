@@ -1,5 +1,6 @@
 ---
 title: "Research"
+author: []
 ---
 
 My current focus lies in the mathematical modeling and analysis of collective dynamics... Here you can find a list of preprints 
