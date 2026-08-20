@@ -14,7 +14,16 @@ menu:
     main:
         - name: Home
           url: /
-          weight: 5 
+          weight: 10
+        - name: Research
+          url: /research
+          weight: 20
+        - name: Teaching
+          url: /teaching
+          weight: 30
+        - name: Contact
+          url: /contact
+          weight: 40
         #- name: Papers
           #url: papers/
           #weight: 2
@@ -55,15 +64,18 @@ params:
     profileMode:
           enabled: true
           title: Julián Cabrera-Nyst
-          subtitle: "I am a third-year PhD student in Mathematics at the [University of Granada](https://www.ugr.es), and I'll soon be visiting the [Laboratoire Jacques-Louis Lions](https://www.ljll.fr)."
+          subtitle: "Hi! I am a third-year PhD student in Mathematics at the <a href='https://www.ugr.es/en' style='color: #8b1e3f !important;'>University of Granada</a>. My advisor is <a href='https://sites.google.com/view/davidpoyato' style='color: #8b1e3f !important;'>David Poyato</a>.<br><br>My email is <a href='mailto:jcabreranyst@ugr.es' style='color: #8b1e3f !important;'>jcabreranyst&#64;ugr.es</a>"
           imageUrl: "profile-webpage.jpeg"
           imageWidth: 200
           imageHeight: 200
           buttons:
             - name: Research 
               url: research/
-            - name: CV
-              url: cv/
+            - name: Teaching
+              url: teaching/
+            - name: Contact
+              url: contact/
+
             #- name: Books
               #url: books/
             #- name: Papers
