@@ -33,6 +33,7 @@ My current methodology bridges the gap between microscopic multi-agent systems (
 ## Talks
 
 *   **Jul 2026:** Invited talk at the Minisymposium [Stochastic models and methods in mathematical biology](https://ecmtb2026.org/contributions/minisymposia/ms46), [*14th European Conference on Mathematical & Theoretical Biology*](https://ecmtb2026.org), Graz, Austria.
+*   **Mar 2026:** Talk at the seminar of the [MUSCLEES](https://team.inria.fr/musclees/) research group.
 *   **Oct 2025:** Invited talk, [*New Synergies in Partial Differential Equations*](https://www.birs.ca/events/2025/5-day-workshops/25w5403), BIRS, Banff, Canada.
 *   **Sep 2025:** Invited talk, [*Gradient flows face-to-face 2025*](https://wpd.ugr.es/~imag/events/event/gradient-flows/), IMAG, Granada, Spain.
 *   **Sep 2025:** Invited talk, [*Networked MathFlows 2025*](https://sites.google.com/impan.pl/networkedmathflows2025/), Będlewo, Poland.
